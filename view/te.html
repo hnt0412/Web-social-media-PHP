@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <script src="assets/js/all.js"></script>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid">
+        <div class="row">
+            <div class="header">
+                <div class="logo col c-4">
+                    <span class="logo__title">Kiki</span>
+                </div>
+                <div class="search col c-4">
+                    <form action="" class="search__form">
+                        <input type="text" class="input__search" name="search" placeholder="Tìm kiếm...">
+                        <button class="submit__search" name="submit__search"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="header__main col c-4">
+                    <div class="icon">
+                        <a href="" class="icon__link"><i class="fas fa-home"></i></a>
+                        <a href="" class="icon__link"><i class="far fa-comment-dots"></i></a>
+                        <a href="" class="icon__link"><i class="far fa-bell"></i></a>
+                        <a href="" class="icon__link icon__link-click"><i class="fas fa-sliders-h"></i></a> 
+                            <div class="change">
+                                <div class="change__outs">
+                                <a href="view_profile.php" class="change__link"><div class="home__detail"><i class="fas fa-house-user"></i><span class="change__all">Cập nhật trang cá nhân</span></div></a>
+                                <a href="" class="change__link"><div class="home__detail"><i class="fas fa-cog"></i><span class="change__all">Cài đặt</span></div></a>
+                                <a href="logout.php" class="change__link"><div class="home__detail"><i class="fas fa-sign-out-alt"></i><span class="change__all">Đăng xuất</span></div></a>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="navigation col c-4">
+                    <div class="user">
+                        <div class="user__img"><img src="../assets/image/img_user/<?php echo $img ?>" alt="" class="user__img-main"></div>
+                        <a href="" class="user__title-link"><span class="user__title"><?php echo $username ?></span></a>
+                    </div>
+                    <div class="user">
+                        <div class="user__icon-friend"><i class="fas fa-user-friends"></i></div>
+                        <a href="" class="user__title-link"><span class="user__title">Bạn bè</span></a>
+                    </div>
+                </div>
+                <div class="time__line col c-4">
+                    <div class="think">
+                        <form action="" class="form__think">
+                            <textarea name="input__think" class="input__think" id="" cols="30" rows="10"></textarea>
+                            <!-- <input type="text" class="input__think" placeholder="Bạn đang nghĩ gì ?"> -->
+                            <div class="file__submit">
+                                <label for="file__think" class="custom__file-think">Thêm ảnh</label>
+                                <input type="file" id="file__think" class="file__think"/>
+                                <button type="submit" class="submit__think" name="submit__think">Viết</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="time__line-main">
+                        <div class="time__line-time">
+                            <div class="time__line-user">
+                                <div class="time__line-user--img">
+                                    <img src="../assets/image/unnamed.png" alt="" class="time__line-users">
+                                </div>
+                                <a href="" class="time__line-link"><span class="time__line-title">Tôn</span></a>
+                            </div>
+                                <span class="time__line-ago">Cách đây 2 phút</span>
+                        </div>
+                        <div class="time__line-content">Thực ra suy cho cùng tình yêu nói đơn giản thì nó rất đơn giản, nói phức tạp thì cũng rất phức tạp</div>
+                        <div class="time__line-image">
+                            <img src="../assets/image/true-love-la-gi-4.jpg" alt="" class="time__line-images">
+                        </div>
+                        <div class="like__comment">
+                            <div class="like__comment-col">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="like__comment-col likes-2">
+                                <i class="far fa-comment"></i>
+                            </div>
+                            <div class="like__comment-col likes-3">
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time__line-main">
+                        <div class="time__line-time">
+                            <div class="time__line-user">
+                                <div class="time__line-user--img">
+                                    <img src="../assets/image/unnamed.png" alt="" class="time__line-users">
+                                </div>
+                                <a href="" class="time__line-link"><span class="time__line-title">Tôn</span></a>
+                            </div>
+                                <span class="time__line-ago">Cách đây 2 phút</span>
+                        </div>
+                        <div class="time__line-content">Thực ra suy cho cùng tình yêu nói đơn giản thì nó rất đơn giản, nói phức tạp thì cũng rất phức tạp</div>
+                        <div class="time__line-image">
+                            <img src="../assets/image/true-love-la-gi-4.jpg" alt="" class="time__line-images">
+                        </div>
+                        <div class="like__comment">
+                            <div class="like__comment-col">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="like__comment-col likes-2">
+                                <i class="far fa-comment"></i>
+                            </div>
+                            <div class="like__comment-col likes-3">
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time__line-main">
+                        <div class="time__line-time">
+                            <div class="time__line-user">
+                                <div class="time__line-user--img">
+                                    <img src="../assets/image/unnamed.png" alt="" class="time__line-users">
+                                </div>
+                                <a href="" class="time__line-link"><span class="time__line-title">Tôn</span></a>
+                            </div>
+                                <span class="time__line-ago">Cách đây 2 phút</span>
+                        </div>
+                        <div class="time__line-content">Thực ra suy cho cùng tình yêu nói đơn giản thì nó rất đơn giản, nói phức tạp thì cũng rất phức tạp</div>
+                        <div class="time__line-image">
+                            <img src="../assets/image/Real-Madrid.jpg" alt="" class="time__line-images">
+                        </div>
+                        <div class="like__comment">
+                            <div class="like__comment-col">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="like__comment-col likes-2">
+                                <i class="far fa-comment"></i>
+                            </div>
+                            <div class="like__comment-col likes-3">
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="online col c-4"></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
